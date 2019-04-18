@@ -1,0 +1,743 @@
+Spring Framework
+================
+
+Pre-Requisites
+--------------
+1) Core Java
+	 - java.lang package
+
+	 - OOPS
+		- Inheritence
+		- Polymorphism
+		- Encapsulation
+		- Abstraction
+
+	 - Collections	
+		- List
+		- Set
+		- Map
+		- Properties
+		- Comparator & Comparable
+		- Enumeration, Iterator and ListIterator
+	 - I/O Streams
+	 - Exception Handling
+	 - Multi Threading
+	 - Annotations
+	 - Generics
+	 - Java 8 features
+	 - Reflection API
+
+Advanced Java
+=============
+JDBC API
+	- Driver
+	- DriverManager
+	- Connection
+	- Statement & Pstmt & Cstmt
+	- ResultSet
+	- DatabaseMetaData, ResultMetaData etc...
+	- Connection Pooling
+
+Servlets
+	 - Web Application
+	 - WebServer & App Server
+	 - Application Deployment process
+	 - Servlet, ServletConfig, ServletContext
+	 - Servlet Life Cycle
+	 - ServletRequest, ServletResponse
+	 - GenericServlet, HttpServlet
+	 - RequestDispatcher
+	 - HttpSession
+	 - Filters & Listeners
+JSP
+	 - Why Jsp
+	 - Jsp Life cycle
+	 - Jsp Implicit objects
+	 - directives, tags, custom tags etc..
+	 - JSTL
+
+Databases
+---------
+SQL knowledge
+
+
+
+
+Webservice , Restful Services & Hibernate --- parallely you can learn.
+
+============================================================
+
+Introduction (7 days)
+======================
+What is Framework
+Why we need frameworks
+Types of Frameworks
+Why Spring became very popular ?
+Comparision Spring with Other frameworks
+Advantages of using Spring in project
+Spring Architecture
+Spring Modules
+
+
+Spring Core (30 concepts) (20 days)
+	
+Spring Web MVC (10 days)
+
+Spring Boot & micro services (7 days)
+
+Spring AOP (7 days)
+
+Spring JDBC (4 days)
+
+Spring Tx (2 days)
+
+Spring ORM (4 days)
+
+Spring Data ( 2 days)
+
+Spring Rest (2 days)
+
+Spring Security(3 days)
+
+SPring Batch (3 days)
+
+Spring Cloud (3 days)
+====================================
+70 days (2.5 months)
+====================================
+
+Duration : 2.5 months (+/- 10 days)
+
+Daily Timings : 11:00 AM - 1:00 PM (Monday-Monday)
+
+Running Notes : Not allowed
+
+No recordings & No photos & No videos
+
+================================================================
+
+
+facebook group name: Ashok IT School
+
+email id : ashok.javatraining@gmail.com
+
+-------------------------------------------------------------------
+
+Java : Programming language. Providing synatxes for us. We can develop CUI and GUI applications using this.
+
+Jdbc : Jdbc is an api to connect with Databases.
+
+JEE
+====
+Servlets & JSP : These technologies are used to develop web applications.
+
+
+Frameworks
+===========
+Hibernate : Hibernate is a ORM framework. To develop Persistence layer. It is advanced to JDBC api.
+
+
+Strutus 1./2.x : These are Java based web application frameworks. These are used to develop web applications. (Out dated).
+
+JSF : Java Server Faces
+
+Spring : Application development framework.
+
+
+Distributed Technologies
+==========================
+
+EJB : Enterprise java beans. Used to develop enterprize apps. 
+(Out dated)
+
+Webservices & Restful Services : These are distributed technologies. Using these technologies one application can communicate with another application.
+
+
+
+What is framework ?
+-------------------
+Framework is a semi developed software which provides some common 
+logics which are required for several applications development.
+
+Ex : Connection opening & closing, query execution, capture form data,  sending email, generating excel report, generating pdf report, sending msg to mobile, copy data from one object to another object etc......
+
+Frameworks will be released in the form of jar files
+
+jar files contains .class files
+
+.class files contains common logics
+
+Note : In order to use framework in project development, then we should download and add framework relted jars to project build path.
+
+Instead of we are downloading and setting buid path , we can use build tools to automate this process like Maven or Gradle
+
+
+Advantages of frameworks
+=========================
+1) Code Re-Usability
+
+2) We can avoid boiler plate code
+
+3) Less time for development
+
+4) Less of no.of issues in project.
+
+Dis-Advantages
+===============
+1) When we use frameworks in project development, performance of application will be bit slow.
+
+
+Note: When we compare advantages and dis-advantages of frameworks , advantages are more hence frameworks are having lot of demand in companies.
+
+
+Types of Frameworks
+-------------------
+1) Web frameworks : Used to develop only web components
+
+	Ex : Struts 1.x/2.x, JSF etc...
+
+2) ORM frameworks : Used to developer Persistent components
+
+	Ex : Hibernate, JPA, IBatis, MyBatis, TopLink etc...
+
+3) Application Development Framework : Used to develop end to end project (web,service,persistent components).
+		
+	Ex : Spring
+
+
+
+
+Layered architecture
+--------------------
+Now a days every project is getting developed using layered architecture.
+
+Below are the layers that we can see in real time projects.
+----------------------------------------------------------
+1) Presentation Layer
+2) Web Layer
+3) Service Layer
+4) Persistence Layer
+
+
+1) Presentation Layer :
+----------------------
+Presentation layer contains user interface (UI)
+
+Ex : Login form, registration, forgot password, search etc...
+
+Technologies for UI Development 
+--------------------------------
+HTML, JSP, Java Script, CSS, JQuery, Ajax , Angular JS etc...
+
+
+2) Web Layer : 
+--------------
+1) In this layer we will develop web components. 
+2) Web components are also called as Request Handlers. 
+3) Request Handlers are also called as Controllers in frameworks.
+
+Role of Web components in Project : 
+-----------------------------------
+a) Handling user request
+b) Capturing form data
+c) Calling Service or business layer methods
+d) Sending Response to clients.
+e) Controllers acts as Delegator.
+
+Technologies to develop web components
+--------------------------------------
+Servlets, Jsp, Struts 1.x/2.x, JSF, EJB, SPring and Play Framework etc
+
+
+3) Service or Business or Helper Layer
+--------------------------------------
+As part of this layer we will write business logics like below
+
+a) Server side validations
+b) Password encryption and de-cryption
+c) Sending Emails using java mail api
+d) Sending OTP using twillo api
+e) Generating Excel report using apache poi api
+f) Genering pdf report using itext or aspose api.
+g) Copying data from model obj to entity obj and vice versa.
+h) Integration tier logics like soap clients and rest clients.
+
+Role of service layer
+----------------------
+a) Execute business logic
+b) Call persistence layer component methods
+
+Technologies for Service layer development
+------------------------------------------
+Java, Spring, Third party apis .....
+
+3) Persistence layer
+--------------------
+a) This layer contains persistent components
+b) Persistent components are responsible for only Database communication.
+c) Persistent components are called as dao s or repositories.
+
+DAO - Data Access Object
+
+Technologies for Persistence layer development
+----------------------------------------------
+Java Jdbc, ORM frameworks , Spring JDBC, Spring ORM, Spring Data
+
+
+
+
+Spring Framework
+Author: Rod Johnson
+Year : 2003
+Initial Version : Spring 1.x
+.
+Spring 3.x (So Many changes in Spring )
+
+Current Version : Spring 5.x
+
+Pivotal team
+
+
+web frameworks : web components    ----- struts
+
+orm frameworks : persistence layer ---- hibernate 
+
+app development frameworks : Everything ---- spring
+
+Spring Author : Rod Johnson
+
+Advantages of Spring Framework
+------------------------------
+1) Using spring we can develop both standalone and web apps.
+
+2) Spring is not a single framework. It is collection of modules.
+
+3) Spring will not force you to use all modules. Whatever is required for project take only that module from spring.
+
+4) Spring is a Versatile framework. Spring can be integrated with any framework which is related to java.
+
+5) Spring is a non-invasive framework. Spring will not force programmers to extend or implement any predefined classes or interfaces.
+
+Note: Struts will force programmers to extend properties from Action class hence Struts is called as Invasive framework.
+
+
+6) Spring supports POJO and POJI model programming. Our classes will be loosely coupled with Spring Framework. In future if we don't want to use spring just we need to remove spring jars from build path and no need to touch source code.
+
+
+Note: If we use struts framework, our application classes will be tightly coupled with struts framework. Removing Struts framework from the project is not easy bcz every class is tightly coupled with Action class.
+
+Action is a predefined class in Struts framework.
+
+
+Spring Architecture
+-------------------
+Spring architecture changed from version to version.
+
+Intial Version of Spring is 1.x. It contains total 7 modules.
+
+Spring 2.x contains 6 modules.
+
+Spring 3.x contains almost 20 modules. (So many annotations introduced) in 3.x version.
+
+In Spring 4.x "Messaging" module got added
+
+In Spring 5.x Reactive programming is added.
+
+Current Version of Spring is 5.x. It contains approxmately 20-30 modules.
+
+
+Spring 1.x Modules
+------------------
+1) Spring Core
+2) Spring Context
+3) Spring DAO
+4) Spring ORM
+5) Spring AOP
+6) Spring Web and 
+7) Spring Web MVC
+
+Note : In Spring 2.x version Spring Web and Spring Web MVC are combined as Single module hence we have total 6 modules in Spring 2.x version.
+
+
+Spring Core
+-----------
+-> This is base module for spring framework.
+
+-> It is providing fundamental concepts IOC & DI in Spring       framework.
+
+	IOC : Inversion of control
+
+	DI : Dependency Injection.
+
+-> Using this core module we can develop stand-alone applications.
+
+-> All other modules in spring are depeloped on top of spring    core module.
+
+Spring Context:
+--------------
+-> Spring context module deals with Configuration in Spring applications.
+
+-> It is used for packages scanning and classes loading.
+
+
+Spring DAO:
+-----------
+-> DAO means data access object.
+-> It is used to develop persistence layer using spring framework.
+-> This is also called as Spring JDBC.
+-> This Spring DAO module is developed on top of java jdbc.
+-> This module resolved boiler plate code writing.
+
+
+Q) Can we call Spring JDBC as replacement for java jdbc ?
+
+Ans) No, Spring jdbc is complementing java jdbc.
+
+
+Spring ORM: (Object Relational Mapping)
+---------------------------------------
+-> To overcome drawbacks of jdbc, ORM frameworks came into market.
+
+-> In ORM frameworks also we need to write some boiler plate code.
+
+-> To avoid boiler plate code in ORM frameworks, spring provided Spring ORM module.
+
+-> Spring ORM module will support for several orm frameworks.
+
+-> Spring ORM module is developed on top of existing ORM frameworks.
+
+Spring AOP (Aspect Oriented Programming):
+-----------------------------------------
+-> Our applications contains below 2 types of logics
+	
+	1) Primary logic
+	2) Secondary logic
+
+	Primary logic : Business logic
+	Secondary logic : Helper logic
+
+-> If we write both primary and secondary logics together then tightly coupling problem will occur hence it is not recommended.
+
+-> To seperate primary and secondary logics we will use Spring AOP module in project.
+
+Spring Web and Spring Web MVC
+-----------------------------
+-> Spring Web and MVC modules are used to develop web based applications using Spring framework based on MVC design pattern.
+
+-> Spring web MVC module will use FrontController design pattern to process client requests.
+
+-> Spring MVC supports for multiple view technologies like html, jsp, theamleaf, velocity and freemarker etc..
+
+-> Spring MVC supports for form binding object. Form data can be binded to model objects automatically.
+
+-> Spring Web MVC supports for Distributed Components development.
+   (Both and soap and Rest).
+
+
+
+
+
+
+Spring 1.x is having 7 modules
+-------------------------------
+Spring core , spring context, spring aop, spring dao, spring orm, spring web, spring web mvc
+
+Spring 2.x is having 6 modules
+--------------------------------
+spring web and web mvc combined as single module
+
+Spring 3.x is having almost 2 modules
+--------------------------------------
+All above 6 modules are divied into 20 sub modules
+
+In Spring 4.x "messaging" module got added
+-------------------------------------------
+
+In Spring 5.x new features are added but no changes to spring
+architecture diagram
+-------------------------------------------------------------
+
+
+
+Spring Core
+-----------
+-> This is base module of Spring framework
+
+-> This is providing IOC & DI.
+
+
+
+
+
+Projects are used to reduce human efforts.
+
+Project contains several classes.
+
+All the classes will not play same role in project.
+
+Based on role the classes are playing they can be divided into below 3 types
+
+	1) POJO
+	2) Java bean
+	3) Component
+
+POJO : Plain old java object
+----------------------------
+A java class which can be compiled with only jdk software then we can call that class as a POJO.
+
+POJO classes shouldn't extend or implement any api or framework related classes and interfaces.
+
+Ordinary java class without any special effects.
+
+These classes are used to transfer data from one layer to another layer in object format.
+
+We can write business logic also in POJO classes.
+
+Ex:
+---
+
+
+public class Demo{
+
+}
+
+public class Demo1{
+    int i;
+    int j;
+    Double d;
+    String name;
+}
+
+public class Demo2 implements Callable{	
+	//call()
+}
+
+public class Demo3 extends Thread{
+
+}
+
+public class Demo4 implements Serializable{
+
+}
+
+public class Demo5 implements Servlet{
+
+}
+
+
+
+Java Bean
+----------
+The class which follows bean specification rules is called as java bean class.
+
+Rules
+-----
+1) Class should be public 
+2) Class should contain public 0-param constructor.
+3) Every variable should be private
+4) Every variable should contain public setter & getter methods
+5) Recommended to implement java.io.Serializable interface.
+
+- > Java Bean classes are used to exchange data among multiple layers.
+
+public class User implements java.io.Serializable{
+
+	public User(){	
+	}
+
+	private Integer id;
+
+	public void setId(Integer id){
+		this.id = id;
+	}
+	public Integer getId(){
+		return id;
+	}
+}
+
+
+Component
+---------
+The classes which contains business logic are called as Component classes.
+
+Ex : Controller, Service and DAO etc..
+
+
+When we have several classes like above, all the classes are dependent on some other classes to complete execution.
+
+Q) How one class can talk to another class in java ?
+
+A) We have 2 ways to communicate from one class to another class.
+
+	1) IS-A (Inheritence)
+	2) HAS-A (Composition)
+
+
+Inheritence
+-----------
+Extending properties from one class to another class is called inheritence
+
+The main goal of Inheritence is re-usability
+
+
+Dis-Advantages
+--------------
+-> Classes will be tightly coupled
+
+-> Our class can't extend properties from any other class in 	future
+
+-> Code is not easily testable.
+
+To solve Inheritence problems, we can go for Composition
+
+Composition
+-----------
+The process of creating object for a class.
+
+
+Composition Dis-Advantages
+----------------------------
+1) Classes are tightly coupled
+
+2) Code is not easily testable.
+
+3) For all classes we can't use new operator to create object.
+	Ex : abstract classes and singleton classes
+
+4) Some classes will contain complex instantiation process
+
+5) Sometimes we don't know class name to instantiate.
+
+
+Inheritence and Composition concepts are used to talk from one class to another class.
+
+But Both approaches are having dis-advantages.
+
+Factory Design Pattern
+======================
+Design patterns are used to provide solutions for common problems which are occuring in several projects.
+
+
+
+Calendar c = new Calendar() ; // invalid bcz it is abstract
+
+Calendar.newInstance() ; //
+
+
+
+
+
+
+
+
+
+
+GIT Repository URL : 
+
+https://github.com/Ashok-IT-School/26-Spring-11AM
+
+
+
+
+
+
+class Demo{
+  public static void display(ArrayList al){
+	//logic
+	sysout(al);
+  }
+ 
+}
+---------------------------------------------------------------
+class Test{
+	psvm(String... ar){
+		LinkedList ll = new LinkedList();
+		ll.add(10); ll.add(20); ll.add(30);
+		Demo.display(ll);
+
+		ArrayList al = new ArrayList();
+		al.add(30), al.add(40); al.add(50);
+		Demo.display(al);
+	}
+}
+------------------------------------------------------------
+
+
+
+class Demo{	
+	public List getData(){
+		//logic
+		ArrayList al = new ArrayList();
+		al.add(20);
+		return al;
+	}
+}
+------------------------------------------------------
+List list = getData();
+
+
+
+
+
+The process of injecting dependent object into target object is called Dependency Injection (DI).
+
+We can achieve dependency injection in 2 ways.
+
+1) Setter Injection (SI)
+
+2) Constructor Injection (CI)
+
+Setter Injection : Injecting dependent object into target object by calling target class setter method.
+
+		Car c = new Car();
+		c.setEng(eng);
+
+Constructor Injection : Injecting Dependent Object into target object by calling target class constructor.
+
+		Car c = new Car(eng);
+
+
+
+
+
+
+
+
+IOC : Inversion of control
+
+IOC is a principle which is used to manage and colloborate dependencies among objects in application.
+
+
+Q) can ioc manage and colloborate any two class objects ? 
+
+Ans) No - If your classes folollow some rules and guidelines then only ioc can manage and colloborate your objects.
+
+
+If we need to use IOC for Dependency Injection for our classes then our classes should follow Strategy Design Pattern.
+
+Strategy Design Pattern Rules
+-------------------------------
+1) Favour composition over inheritence
+
+2) Always code to interfaces instead of concrete implementations
+
+3) Code should be open for extension and should be closed for modification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
