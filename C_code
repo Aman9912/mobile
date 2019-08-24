@@ -1,7 +1,79 @@
 #include <stdio.h>
 int main(){
     int i=10,j=2,k=0,m;
-    m=++i && ++j && ++k;
-    printf("%d\n%d\n%d\n%d",i,j,k,m);
+    m=++i && ++j && ++k; //--> m= 11 && 3 && 1 && 1 = 1
+    printf("%d\n%d\n%d\n%d",i,j,k,m); //o/p-----> 11 3 1 1
     return 0;
 }
+
+-----------------------------------------------------------------------------
+#include <stdio.h>
+main()
+{
+if(1) // True always
+printf(“hai”);
+else
+printf(“hello”);
+}
+O/P------> hai
+-------------------------------------------------------------------------------
+#include <stdio.h>
+main()
+{
+if(1) // False always
+printf(“hai”);
+else
+printf(“hello”);
+}
+O/P-------> hello
+
+---------------------------------------------------------------------------------
+
+main()
+{
+if(5,4,3,2,1, 0 ) // Last value of list is considered
+printf(“True”);
+else
+printf(“False”);
+}
+O/p--------> False
+
+---------------------------------------------------------------------------------
+
+main()
+{
+if(5,4,3,2,1, 9 ) // Last value of list is considered
+printf(“True”);
+else
+printf(“False”);
+}
+o/p---------> True
+
+--------------------------------------------------------------------------------
+
+main()
+{
+if( printf(“Hai”)) // prints content of printf statement and takes length of the string for if case 
+                   // execution in this case its 4, So true
+printf(“Face”);
+else
+printf(“Focus”);
+}
+o/p---------> HaiFace
+--------------------------------------------------------------------------------------------------
+
+main()
+{
+if( printf(“ ”)) // prints content of printf statement and
+                //takes length of the string for if case //execution in this case its 1, So true
+printf(“Face”);
+else
+printf(“Focus”);
+}
+
+o/p----------> Focus
+______________________________________________________________________________________________________
+
+
+
+
